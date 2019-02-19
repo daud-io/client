@@ -1,0 +1,72 @@
+[
+    {
+        "world": "de.daud.io/default",
+        "server": "de.daud.io",
+        "players": 0,
+        "name": "FFA - Europe",
+        "description": "Like regular FFA but with different ping times and metric-sized cup holders",
+        "allowedColors": [
+            "ship_pink",
+            "ship_red",
+            "ship_orange",
+            "ship_yellow",
+            "ship_green",
+            "ship_cyan"
+        ],
+        "instructions": "Mouse to aim, click to shoot. Press 's' to boost."
+    },
+    {
+        "world": "us.daud.io/default",
+        "server": "us.daud.io",
+        "players": 2,
+        "name": "FFA",
+        "description": "FFA Arena",
+        "allowedColors": [
+            "ship_pink",
+            "ship_red",
+            "ship_orange",
+            "ship_yellow",
+            "ship_green",
+            "ship_cyan"
+        ],
+        "instructions": "Mouse to aim, click to shoot. Press 's' to boost."
+    },
+    {
+        "world": "us.daud.io/duel",
+        "server": "us.daud.io",
+        "players": 10,
+        "name": "Dueling Room",
+        "description": "1 vs. 1",
+        "allowedColors": [
+            "ship_pink",
+            "ship_red",
+            "ship_orange",
+            "ship_yellow",
+            "ship_green",
+            "ship_cyan"
+        ]
+    },
+    {
+        "world": "us.daud.io/team",
+        "server": "us.daud.io",
+        "players": 0,
+        "name": "Team",
+        "description": "Cyan vs. Red",
+        "allowedColors": [
+            "ship_red",
+            "ship_cyan"
+        ]
+    },
+    {
+        "world": "us.daud.io/ctf",
+        "server": "us.daud.io",
+        "players": 0,
+        "name": "Capture the Flag",
+        "description": "Cyan vs. Red - Capture the Flag. First to 5 wins!",
+        "allowedColors": [
+            "ship_red",
+            "ship_cyan"
+        ],
+        "instructions": "<p>features two teams,cyan and red, \n                    who each try to steal the other team's\n                    flag and bring it back to their own \n                    base to 'capture'.</p>\n                    <p>each team will have their own base and flag to defend.In order to score, your team's flag must still be \n                    at your base, which means you'll have to have some good defense to keep\n                    the other team from running off with your flag.</p>\n                    <p>If someone makes off with your flag, frag them and they'll drop your flag -- \n                    touch the flag and it will be returned\n                    to your base.</p>"
+    }
+]

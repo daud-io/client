@@ -85,25 +85,15 @@ function refreshList(autoJoinWorld) {
     const autoJoin = firstLoad || autoJoinWorld;
     firstLoad = false;
 
-    fetch("/api/v1/world/all", {
-        method: "GET",
-        headers: {
-            "Content-Type": "application/json; charset=utf-8"
-        }
-    })
-        .then(r => r.json())
-        .then(({ success, response }) => {
-            if (success) {
-                if (window.location.hash) {
-                    const selected = window.location.hash.substring(1);
-                    window.Game.primaryConnection.connect(selected);
-                }
+    var response = require("../worlds.json");
+    if (window.location.hash) {
+        const selected = window.location.hash.substring(1);
+        window.Game.primaryConnection.connect(selected);
+    }
 
-                buildList(response);
+    buildList(response);
 
-                if (autoJoin) joinWorld(autoJoinWorld || "us.daud.io/default");
-            }
-        });
+    if (autoJoin) joinWorld(autoJoinWorld || "us.daud.io/default");
 }
 
 function hide() {
